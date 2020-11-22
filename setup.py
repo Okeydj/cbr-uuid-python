@@ -5,7 +5,6 @@
 
 from setuptools import setup, find_packages, Extension
 from setuptools.command.build_py import build_py as _build_py
-import uuid_cbr.__version__ as version
 
 class CustomInstallCommand(_build_py):
     def run(self):
@@ -15,7 +14,7 @@ class CustomInstallCommand(_build_py):
 
 
 setup(name='uuid_cbr',
-      version=version,
+      version='1.0.0',
       author='OkeyDJ <okeydj@gmail.com>',
       author_email='okeydj@gmail.com',
       description='Python wrapper for the cbrf uuid library.',
